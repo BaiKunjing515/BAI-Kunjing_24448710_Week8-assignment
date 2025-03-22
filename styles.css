@@ -1,0 +1,271 @@
+body {
+    font-family: Palatino;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('aespa_background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; 
+}
+
+.hero h1 {
+    font-size: 5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+.about{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.member img {
+    width: 100%;
+    max-height: 4096px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: filter 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; 
+}
+
+.member img:hover {
+    filter:grayscale(100%) brightness(120%) contrast(90%);
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    opacity: 0.8;
+}
+.member h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.member p {
+    font-size: 1em;
+    color: #777;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.member-detail {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.member-detail h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.member-detail img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.member-detail p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.member-detail p strong {
+    display: inline-block; 
+    width: 120px; 
+    text-align: right; 
+    margin-right: 10px; 
+}
+
+.carousel {
+    position: relative;
+    width: 50%;
+    padding-bottom: 56.25%; 
+    height: 0; 
+    margin: 0 auto 20px; 
+    overflow: hidden; 
+}
+
+
+.carousel .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%; 
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carousel-control.prev {
+    left: 10px; 
+}
+
+.carousel-control.next {
+    right: 10px; 
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 音乐区域样式 */
+.music {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* 浅灰色背景 */
+}
+
+.music h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.music-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.song {
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song:hover {
+    transform: translateY(-10px); /* 悬停时上移 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 悬停时阴影加深 */
+}
+
+.song img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.song h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.song p {
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 0;
+}
+
+.song a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.song a:hover {
+    background-color: silver; /* 悬停时按钮颜色变深 */
+}
